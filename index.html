@@ -10,23 +10,26 @@
   <body>
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
     <div class="container">
-      <div>
-        <form class="form">
+      <h1 id="title">Survey Form</h1>
+      <p id="description">
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+      </p>
+      <form id="survey-form" class="form">
           <div class="form-group">
-            <label for="name">Name:</label>
-            <input type="text" class="form-control">
+            <label id="name-label" for="name">Name:</label>
+            <input id="name" type="text" class="form-control" required placeholder="Enter Name">
           </div>
           <div class="form-group">
-            <label for="name">Email:</label>
-            <input type="email" class="form-control">
+            <label id="email-label" for="name">Email:</label>
+            <input id="email" type="email" class="form-control" required placeholder="Enter Email">
           </div>
           <div class="form-group">
-            <label for="name">Age:</label>
-            <input type="text" class="form-control">
+            <label id="number-label" for="name">Age:</label>
+            <input id="number" type="number" class="form-control" placeholder="Enter your age" min="0" max="20">
           </div>
           <div class="form-group">
             <label for="name">Which Option best describes your current role:</label>
-            <select name="" id="" class="form-control">
+            <select name="" id="dropdown" class="form-control">
               <option value="">Select current role</option>
               <option value="">Student</option>
               <option value="">Full time job</option>
@@ -37,9 +40,9 @@
           </div>
           <div class="form-group">
             <label for="name">Would you recommend freecode camp to a friend</label><br>
-            <input type="radio" value="Definitelly">Definitelly<br>
-            <input type="radio" value="Maybe">Maybe<br>
-            <input type="radio" value="Not sure">Not sure
+            <input name="recommend" type="radio" value="Definitelly"> Definitelly<br>
+            <input name="recommend" type="radio" value="Maybe"> Maybe<br>
+            <input name="recommend" type="radio" value="Not sure"> Not sure
           </div>
           <div class="form-group">
             <label for="name">What is your favourate feature of Freecodecamp?</label>
@@ -69,9 +72,8 @@
             <label for="name">Any comments or Suggestions?</label>
             <textarea name="comment" id="" cols="30" rows="10" class="form-control" placeholder="Enter youur comment here"></textarea>
           </div>
-          <button class="form-control btn btn-success">Submit</button>
-        </form>
-      </div>
+          <button id="submit" class="form-control btn btn-success">Submit</button>
+      </form>
     </div>
     <!-- <p>Hello World, we are software developers</p> -->
     <!--
